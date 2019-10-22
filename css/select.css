@@ -1,0 +1,27 @@
+/* Múltiplas rádios, retire isto em produção */
+.radios {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.radios select {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  border-radius: 4px;
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.radios select option {
+  font-family: 'Nunito', sans-serif;
+  padding: 10px;
+  margin-top: 2px;
+  outline: none;
+  border: none;
+}

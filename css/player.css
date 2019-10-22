@@ -1,0 +1,143 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 360px;
+}
+
+.container .gitlab {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: #55606E;
+}
+
+.audio.stream-player {
+  width: 100%;
+  min-height: 55px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.07);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.audio.stream-player .controls .titulo.hidden {
+  display: none;
+}
+
+.audio.stream-player .play-pause-btn {
+  display: none;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.audio.stream-player .spinner {
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/loading.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: spin 0.3s linear infinite;
+  margin-left: 20px;
+}
+
+.audio.stream-player .controls .titulo {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.audio.stream-player .controls {
+  font-size: 16px;
+  color: #55606E;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 160px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.audio.stream-player .controls .volbar.hidden {
+  display: none;
+}
+
+.audio.stream-player .controls span {
+  cursor: default;
+}
+
+.audio.stream-player .volume {
+  position: relative;
+  padding-right: 20px;
+}
+
+.audio.stream-player .volume .volume-btn {
+  cursor: pointer;
+}
+
+.crossfade {
+  display: inline;
+  transition: all .7s linear;
+}
+
+.hidden {
+  display: none;
+}
+
+.visuallyhidden {
+  opacity: 0;
+}
+
+.volbar {
+  float: left;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+.volbar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background .15s ease-in-out;
+}
+
+.volbar::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background .15s ease-in-out;
+}
+
+::-moz-range-track {
+  border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+  border: 0;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(1turn);
+  }
+}

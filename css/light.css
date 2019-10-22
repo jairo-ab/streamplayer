@@ -1,0 +1,83 @@
+body {
+    background: -webkit-linear-gradient(-65deg, #01AEFA, #F8FFAE);
+    background: linear-gradient(-65deg, #01AEFA, #F8FFAE);
+}
+
+.container .gitlab {
+    color: #4C566A;
+}
+
+.audio.stream-player {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.audio.stream-player .slider {
+    background-color: #D8D8D8;
+}
+
+.audio.stream-player .slider .progress {
+    background-color: #44BFA3;
+}
+
+.audio.stream-player .slider .progress .pin {
+    background-color: #44BFA3;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.32);
+}
+
+.audio.stream-player .controls {
+    color: #55606E;
+}
+
+.audio.stream-player .volume .volume-controls {
+    background-color: rgba(0, 0, 0, 0.62);
+}
+
+.audio.stream-player .volume .volume-btn.open path {
+  fill: #44BFA3;
+}
+
+.fas {
+    color: #9da1a8;
+}
+
+.volbar {
+  background: #d7dcdf;
+  /*background: #8c8e91;*/
+  /*background: #fff;*/
+}
+
+.volbar::-webkit-slider-thumb {
+  background: #2c3e50;
+}
+
+/*.volbar::-webkit-slider-thumb:hover {
+  background: #1abc9c;
+}*/
+
+.volbar:active::-webkit-slider-thumb {
+  background: #1abc9c;
+}
+
+/*.volbar::-moz-range-thumb {
+  background: #2c3e50;
+  background: #d7dcdf;
+  background: #8c8e91;
+}*/
+
+.volbar::-moz-range-thumb:hover {
+  background: #1abc9c;
+}
+
+.volbar:active::-moz-range-thumb {
+  background: #1abc9c;
+}
+
+::-moz-range-track {
+  background: #8c8e91;
+}
+
+.radios select {
+  background-color: #fff;
+  color: #566574;
+}

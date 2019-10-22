@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Stream Player">
+    <meta name="author" content="Jairo Abreu">
+    
+    <title>Stream Player</title>
+
+    <meta property="og:title" content="Stream Player" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gitlab.com/sistematico/stream-player" />
+    <meta property="og:image" content="img/logo.png" />
+
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-5.11.1.min.css">
+    <link rel="stylesheet" type="text/css" href="css/principal.css">
+    <link rel="stylesheet" type="text/css" href="css/player.css">
+    <link rel="stylesheet" type="text/css" href="css/light.css" id="estilo">
+
+    <link rel="shortcut icon" href="img/logo1.png">
+</head>
+<body>
+
+    <nav>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider-dark-mode round"></div>
+            </label>
+            <i id="darkIcon" class="fas fa-sun"></i>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="radios">
+            <select id="radio">
+                <option value="https://stream.radiochat.com.br:8010/principal">Rádio Chat</option>
+                <option value="http://rosetta.shoutca.st:8524/stream/;stream.mp3">Rock Alternativo</option>
+                <option value="http://192.99.150.31:8105/;stream.mp3">Rádio Modão</option>
+                <option value="http://stream.dancewave.online:8080/dance.mp3">Dance Wave!</option>
+                <option value="http://node-20.zeno.fm/1gb0ym3yg3quv?rj-ttl=5&rj-tok=AAABbfNzqZEAu4r4g7DToN9BBQ">Power Metal</option>
+                <option value="http://stm11.srvstm.com:12710//;stream.mp3">Kpop</option>
+                <option value="http://listen.181fm.com:7080/181-power_128k.mp3">Pop</option>
+                <option value="http://srv4.ipstm.net:15610/;stream.mp3">Rádio Gospel</option>                                    
+            </select>
+        </div>
+
+        <div class="audio stream-player">
+            <div class="loading">
+                <div class="spinner"></div>
+            </div>
+
+            <div class="play-pause-btn">  
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
+                    <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon" id="playPause"/>
+                </svg>
+            </div>
+
+            <div class="controls">
+                <span id="titulo" class="titulo crossfade">Stream Player</span>
+                <input class="volbar crossfade hidden visuallyhidden" type="range" value="100" min="0" max="100">
+            </div>
+
+            <div class="volume">
+                <div class="volume-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#566574" fill-rule="evenodd" d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z" id="speaker"/>
+                    </svg>
+                </div>
+            </div>
+
+            <audio crossorigin>
+                <source id="audiosource" src="https://stream.radiochat.com.br:8010/principal" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <span class="gitlab">Player desenvolvido por <a href="https://jairo-ab.github.io/jairo-abreu.menu/" target="_blank">Jairo Abreu</a>.<br />Fontes no <a href="https://github.com/jairo-ab" target="_blank">Github</a></span>
+    </div>
+    <script type="text/javascript">
+        const stream = 'https://stream.radiochat.com.br:8010/principal';
+        const info = stream.replace("/principal", "/7.xsl");
+    </script> 
+    <script src="js/player.js"></script>
+    <!-- <script src="js/info.js"></script> -->
+    <script src="js/radios.js"></script>
+    <script src="js/darkmode.js"></script>
+</body>
+</html>

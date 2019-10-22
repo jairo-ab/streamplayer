@@ -1,0 +1,69 @@
+@import url('switch.css');
+@import url('select.css');
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fontes/nunito.woff2') format('woff2'),
+         url('fontes/nunito.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Nunito';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F8FFAE;
+  -webkit-font-smoothing: antialiased;
+  transition: color 5000ms linear;
+  /*background: -webkit-linear-gradient(-65deg, #43C6AC, #F8FFAE);*/
+  /*background: linear-gradient(-65deg, #43C6AC, #F8FFAE);*/
+}
+
+a {
+  color: black;
+}
+
+svg, img {
+  display: block;
+}
+
+.fas.fa-sun {
+    color: #d9ad57;
+}
+
+.fas.fa-moon {
+    color: #425a78;
+}
+
+
+/* Device = Desktops Screen = 1281px to higher resolution desktops */
+@media (min-width: 1281px) {}
+
+/* Device = Laptops, Desktops Screen = B/w 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+/* Device = Tablets, Ipads (portrait) Screen = B/w 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* Device = Tablets, Ipads (landscape) Screen = B/w 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/* Device = Low Resolution Tablets, Mobiles (Landscape) Screen = B/w 481px to 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+  .volbar, .volume { display: none; }
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait) Screen = B/w 320px to 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+  .volbar, .volume { display: none; }
+}
