@@ -81,3 +81,33 @@ body {
   background-color: #fff;
   color: #566574;
 }
+
+.social-media i{
+    float: left;
+    font-size: 2rem;
+    transition: color 650ms;
+}
+
+.social-media ul {
+    list-style: none;
+}
+
+.social-media ul li{
+    float: left;
+}
+
+.social-media ul li a {
+    padding: 20px;
+}
+
+.fa-facebook-square:hover{
+    color: #4267b2;
+}
+
+.fa-instagram:hover{
+    color: #38a1f3;
+}
+
+.fa-whatsapp-square:hover{
+    color: #ea4c89;
+}
