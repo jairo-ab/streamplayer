@@ -91,7 +91,7 @@ body {
     transition: color 650ms;
 }
 
-.social-media ul {
+.social-media ul{
     list-style: none;
 }
 
@@ -99,7 +99,7 @@ body {
     float: left;
 }
 
-.social-media ul li a {
+.social-media ul li a{
     padding: 20px;
 }
 
@@ -113,4 +113,16 @@ body {
 
 .fa-whatsapp-square:hover{
     color: #ea4c89;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0;
+    position: relative;
+}
+
+.copyright p{
+    font-size: 1.0rem;
+    color: white;
 }
