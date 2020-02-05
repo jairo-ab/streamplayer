@@ -115,6 +115,10 @@ body {
     color: #ea4c89;
 }
 
+.fa-telegram:hover{
+    color: #38a1f3;
+}
+
 .copyright{
     width: 100%;
     text-align: center;
